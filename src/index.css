@@ -99,3 +99,16 @@ ul {
   color: white;
 }
 
+
+/* LANDING */
+
+#slider .row{
+  display: flex;
+  justify-content: center;
+}
+
+.react-slideshow-container {
+  width: 500px;
+}
+
+
