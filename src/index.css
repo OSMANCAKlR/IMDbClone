@@ -175,6 +175,7 @@ flex-direction: column;
 
 .upnext__title {
   color: #f5c518;
+  margin-bottom: 10px;
 }
 
 .upnext__img {
@@ -310,6 +311,71 @@ flex-direction: column;
   }
 
 
+  .fa-star-half-stroke {
+    color: #f5c518;
+  } 
+
+
   #featured .react-slideshow-container {
  width: 1280px;
   }
+
+  #movie__info {
+    background-color: white;
+    height: 100vh;
+    color: black;
+  }
+
+  .movieinfo__title {
+    font-size: 54px;
+    font-weight: 400;
+  }
+
+  #movie__info .featured__subtitle--wrapper {
+    margin-top: 84px;
+  }
+  #movie__info .featured__subtitle {
+    font-size: 38px;
+  }
+
+  #movie__info .line {
+    height: 48px;
+  }
+
+
+  .movie__wrapper {
+    display: flex;
+    margin-top: 44px;
+  }
+
+  .movie__poster--img {
+    width: 386px;
+    height: 500px;
+  }
+
+  .movie__image {
+    width: 40%
+  }
+
+  .movie__description--wrapper {
+    width: 70%;
+  }
+
+  .movie__title {
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+.movie__year {
+  margin-top: 14px;
+}
+
+.book__ratings {
+  margin-top: 24px;
+}
+
+.movie__plot {
+  margin-top: 24px;
+  font-size: 18px;
+  width: 60%;
+}

@@ -1,25 +1,49 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import proLogo from "../assets/imdbpro-logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
+import MovieInfo from "../pages/MovieInfo";
 
 function Nav() {
+  const [searchName, setSearchName] = useState();
+  const navigate = useNavigate();
+
+  const handleSearch = (event) => {
+    if (event.key === "Enter") {
+      navigate(`/${searchName}`);
+    }
+  };
+
+
+
+
+
+  console.log(searchName)
+
   return (
     <nav>
       <div className="nav__container">
         <Link to="/">
-        <figure>
-          <img className="logo" src={logo} alt="" />
-        </figure>
+          <figure>
+            <img className="logo" src={logo} alt="" />
+          </figure>
         </Link>
         <div>
           <FontAwesomeIcon icon="fa-solid fa-bars" className="nav__menu" />
           Menu
         </div>
         <div className="search__container">
-        <input type="text" className="nav__search" placeholder="Search IMDb" />
-        <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+          <input
+            onChange={(event) => setSearchName(event.target.value)}
+            type="text"
+            className="nav__search"
+            placeholder="Search IMDb"
+            onKeyPress={handleSearch}
+          />
+        <Link to={`/${searchName}`}>
+          <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+          </Link>
         </div>
         <figure>
           <img src={proLogo} alt="" className="pro__logo" />

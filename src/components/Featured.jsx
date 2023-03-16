@@ -17,6 +17,7 @@ function Featured() {
     setLoading(false);
   }
 
+  console.log(posters)
   useEffect(() => {
     fetchPosters();
   }, []);

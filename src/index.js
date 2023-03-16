@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { faBars, faMagnifyingGlass, faChevronRight, faStar} from '@fortawesome/free-solid-svg-icons';
+import { faBars, faMagnifyingGlass, faChevronRight, faStar, faStarHalf, faStarHalfAlt} from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
 
 
-library.add(faBars, faMagnifyingGlass, faCirclePlay, faChevronRight, faStar)
+library.add(faBars, faMagnifyingGlass, faCirclePlay, faChevronRight, faStar, faStarHalfAlt)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
