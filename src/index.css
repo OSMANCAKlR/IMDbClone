@@ -48,6 +48,10 @@ nav {
   height: 36px;
 }
 
+.menu__bar {
+  display: flex;
+}
+
 .nav__container {
  display: flex;
  align-items: center;
@@ -378,4 +382,136 @@ flex-direction: column;
   margin-top: 24px;
   font-size: 18px;
   width: 60%;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  .search__container {
+    display: none;
+  }
+
+  .pro__logo {
+    display: none;
+  }
+
+  .nav__list--hide {
+    display: none;
+  }
+
+  .nav__container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .logo__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .logo {
+    margin-left: 14px;
+  }
+
+  .nav__list {
+    margin-right: 14px;
+  }
+
+  .menu__text {
+    display: none;
+  }
+
+  .fa-bars {
+    font-size: 20px;
+  }
+
+  .fa-magnifying-glass {
+    margin-top: 2px;
+    display: block;
+    color: white;
+    position: static;
+    margin-right: 12px;
+  }
+
+  .backdrop__img {
+    width: 408px;
+    height: 300px;
+  }
+
+  .upnext__wrapper {
+    display: none;
+  }
+
+  .landing__slider {
+    width: 100%;
+  }
+
+  .react-slideshow-container {
+    width: 408px;
+    height: 300px;
+  }
+
+  .poster__img {
+    width: 90px;
+    height: 133px;
+  }
+
+  .fa-circle-play {
+    font-size: 44px;
+  }
+
+  .poster__description--wrapper {
+    display: flex;
+    align-items: center;
+    top: 80%;
+    left: 30%;
+  }
+
+  .poster__title {
+    font-size: 18px;
+  }
+  
+  .poster__para {
+    display: none;
+  }
+
+  .featured__title {
+    font-size: 26px;
+  }
+
+  .featured__subtitle {
+    font-size: 20px;
+  }
+
+  .line {
+    height: 34px;
+  }
+
+  .fa-chevron-right {
+    font-size: 24px;
+  }
+
+  .movie__row {
+    margin-top: 104px;
+  }
+
+  .react-slideshow-container .default-nav:first-of-type {
+    margin-right: -30px;
+    border-right: 0;
+    border-top: 0;
+    display: none;
+  }
+  
+  .react-slideshow-container .default-nav:last-of-type {
+    margin-left: -30px;
+    display: none;
+  }
 }

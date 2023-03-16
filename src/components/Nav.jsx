@@ -24,14 +24,17 @@ function Nav() {
   return (
     <nav>
       <div className="nav__container">
+        <div className="logo__menu">
+
         <Link to="/">
           <figure>
             <img className="logo" src={logo} alt="" />
           </figure>
         </Link>
-        <div>
+        <div className="menu__bar">
           <FontAwesomeIcon icon="fa-solid fa-bars" className="nav__menu" />
-          Menu
+          <p className="menu__text">Menu </p> 
+        </div>
         </div>
         <div className="search__container">
           <input
@@ -49,7 +52,8 @@ function Nav() {
           <img src={proLogo} alt="" className="pro__logo" />
         </figure>
         <ul className="nav__links">
-          <li className="nav__list">
+        <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+          <li className="nav__list nav__list--hide">
             <Link to="/" className="nav__link">
               Watchlist
             </Link>
