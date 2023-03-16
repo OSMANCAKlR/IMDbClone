@@ -390,6 +390,7 @@ flex-direction: column;
   html, body {
     max-width: 100%;
     overflow-x: hidden;
+    padding-bottom: 144px;
 }
 
   .search__container {
